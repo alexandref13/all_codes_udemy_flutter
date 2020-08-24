@@ -143,6 +143,9 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.black,
                         size: 28,
                       ),
+                      onTap: (){
+                        Navigator.pushNamed(context, '/people');
+                      },
                     ),
                   ),
                   Container(
@@ -157,6 +160,9 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.black,
                         size: 28,
                       ),
+                      onTap: (){
+                        Navigator.pushNamed(context, '/imc');
+                      },
                     ),
                   ),
                   Container(
@@ -171,6 +177,9 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.black,
                         size: 28,
                       ),
+                      onTap: (){
+                        Navigator.pushNamed(context, '/moedas');
+                      },
                     ),
                   ),
                 ],
