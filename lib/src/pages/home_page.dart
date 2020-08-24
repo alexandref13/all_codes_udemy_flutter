@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 
 import 'package:all_udemy_projects_in_one/src/components/home_widget_bottomtab.dart';
@@ -178,7 +176,24 @@ class _HomePageState extends State<HomePage> {
                         size: 28,
                       ),
                       onTap: (){
-                        Navigator.pushNamed(context, '/moedas');
+                        Navigator.pushNamed(context, '/coins');
+                      },
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(bottom: 15),
+                    child: ListTile(
+                      title: Text(
+                        'Lista de Tarefas',
+                        style: TextStyle(fontSize: 18),
+                      ),
+                      leading: Icon(
+                        Icons.tab,
+                        color: Colors.black,
+                        size: 28,
+                      ),
+                      onTap: (){
+                        Navigator.pushNamed(context, '/tasks');
                       },
                     ),
                   ),
