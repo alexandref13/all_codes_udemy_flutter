@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Tarefas extends StatefulWidget {
   @override
@@ -10,11 +11,11 @@ class _TarefasState extends State<Tarefas> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de tarefas'),
-        centerTitle: true,
         backgroundColor: Color(0xff171f40),
+        title:
+            Text('Lista de tarefas', style: GoogleFonts.poppins(fontSize: 20)),
+        centerTitle: true,
       ),
-      body: Container(),
     );
   }
 }
